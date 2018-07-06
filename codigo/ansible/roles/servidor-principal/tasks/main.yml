@@ -1,0 +1,44 @@
+---
+- name: Actualiza los paquetes
+  yum: name='*' state=latest
+
+- name: Instala editor de textos Vim
+  yum: name=vim state=latest
+
+- name: Instala paquetes de virtualización
+  yum: name={{item}} state=present
+  with_items:
+    - "@Virtualization Hypervisor"
+    - virt-manager
+    - virt-install
+    - virt-viewer
+
+- name: Activar el servicio de virtualización al arrancar el equipo
+  service: name=libvirtd state=started enabled=yes
+
+- name: Cambio de inicio del sistema de modo gráfico a multiusuario
+  command: systemctl set-default multi-user.target
+
+- name: Deteniendo el servicio de NetworkManager
+  service: name=NetworkManager state=stopped enabled=no
+  
+- name: Elimina NetworkManager
+  yum: name=NetworkManager state=absent
+  
+- name: Crea bridge de red
+  script: crea_bridge.sh 
+  
+- name: Activa el servicio Network
+  service: name=network state=started enabled=yes
+  
+- name: Revisar si se requiere reiniciar por actualización del kernel
+  shell: LAST_KERNEL=$(rpm -q --last kernel | awk 'NR==1{sub(/kernel-/,""); print $1}'); CURRENT_KERNEL=$(uname -r); if [ $LAST_KERNEL != $CURRENT_KERNEL ]; then echo 'reiniciar'; else echo 'no'; fi
+  ignore_errors: true
+  register: reinicio_sugerido
+
+- name: Reiniciando ...
+  shell: sleep 2 && reboot
+  async: 10
+  poll: 0
+  ignore_errors: true
+  when: reinicio_sugerido.stdout.find("reiniciar") != -1  

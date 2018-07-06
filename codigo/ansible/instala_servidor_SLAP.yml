@@ -1,0 +1,14 @@
+---
+###############################################################################
+# Fecha:  04 de junio del 2018
+# Descripción: Playbook para la instalación del servidor principal del curso
+#              "Software Libre para la Administración Pública" 
+#
+# Autor: Jorge A. Díaz Lara - jorge@integraci.com / jorge.diaz@gmail.com
+# Licencia: GPL Versión 3
+###############################################################################
+
+- name: Preparación del servidor principal para curso - SLAP
+  hosts: servidor-principal
+  roles: 
+    - servidor-principal
