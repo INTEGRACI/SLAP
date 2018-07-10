@@ -9,6 +9,7 @@ Muchos de los participantes colaboran o han colaborado en la administración pú
 * Odín Mojica
 * Jonathan Vargas
 * Victor Mejía
+* Edward Castillo
 * Sandino Araico
 * José Luis Hernández
 
