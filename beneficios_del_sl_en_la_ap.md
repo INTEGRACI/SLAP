@@ -58,17 +58,14 @@ Como consecuencia de la digitalización de los documentos y procedimientos del E
 
 Si el Estado decide usar herramientas informáticas, debe también agotar los recursos para que la mayor cantidad posible de ciudadanos puedan sacar provecho de sus avances. Además de asegurarse de que los canales digitales de comunicación con el Estado estén abiertos a todos, debe buscar maneras de facilitar a la población el acceso a todos los programas que usa. Los programas libres ofrecen al Estado la oportunidad de distribuir libremente copias del programa entre los ciudadanos, y a éstos la facultad de adaptarlos a sus necesidades de modo de ser  útiles en el entorno de procesamiento de datos de su elección. Las licencias privativas obligan al Estado a privilegiar los intereses privados de los autores de los programas por encima del bienestar general de la población.
 
- ## **Conclusiones**
+ ## Conclusiones
 
  El uso juicioso de las herramientas informáticas tiene un gran potencial de mejorar tanto la  eficiencia como la eficacia de las tareas desarrolladas por la administración pública. Un elemento ineludible del juicio a aplicar es asegurarse de que las condiciones de licenciamiento de los programas no restrinjan la libertad de uso, estudio, modificación y redistribución de los programas. Renunciar a estas libertades es socavar la capacidad del Estado para cumplir debidamente con su misión. 
 
-**GOBIERNO DIGITAL, 2005**
+**GOBIERNO DIGITAL, 2005**  
 
 
-
-
-
-<br />
+<br />  
 
 
 [**<- Anterior**](software_libre.md) | [**Inicio**](README.md) | [**Siguiente ->**](laboratorio.md) 
