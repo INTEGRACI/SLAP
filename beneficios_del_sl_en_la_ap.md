@@ -68,4 +68,4 @@ Si el Estado decide usar herramientas informáticas, debe también agotar los re
 <br />  
 
 
-[**<- Anterior**](software_libre.md) | [**Inicio**](README.md) | [**Siguiente ->**](laboratorio.md) 
+[**<- Anterior**](software_libre.md) | [**Índice**](indice.md) | [**Siguiente ->**](laboratorio.md) 
