@@ -1,8 +1,6 @@
-<p align="center">   
- <h1>Índice</h1>
-</p>  
-
-
+# Índice  
+  
+  
 * [Introducción](#)
   * [¿Qué es el software libre?](software_libre.md)
   * [Beneficios del software libre en la administración pública](beneficios.md)
@@ -46,4 +44,4 @@
 <br />   
 
 
-[**<- Anterior**](README.md) | [**Inicio**](README.md) | [**Siguiente ->**](README.md) 
+[**<- Anterior**](README.md) | [**Inicio**](README.md) | [**Siguiente ->**](software_libre.md) 
