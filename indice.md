@@ -1,7 +1,7 @@
 # Índice  
   
   
-* [Introducción](#)
+* [Inicio](README.md)
   * [¿Qué es el software libre?](software_libre.md)
   * [Beneficios del software libre en la administración pública](beneficios.md)
 * [Procesos y servicios en la administración pública](proc_y_servs_en_la_ap.md)
