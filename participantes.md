@@ -18,3 +18,6 @@ Muchos de los participantes colaboran o han colaborado en la administración pú
 * Uno uno cero uno Internet SA de CV
 * Simbiotica - Open Source Solutions, S.C.
 * SiEduca.COM
+
+
+[**<- Anterior**](README.md) | [**Inicio**](README.md) | [**Siguiente ->**](README.md) 
