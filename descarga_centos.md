@@ -9,4 +9,4 @@ Seleccionamos "Get CentOs Now"
 
 <br />
 
-[**<-Anterior**](descarga_fedora.md) | [**Inicio**](indice.md) | [**Siguiente->**](creacion_usb_instalacion_linux.md)
+[**<-Anterior**](descarga_fedora.md) | [**Inicio**](indice.md) | [**Siguiente->**](creacion_usb_instalacion.md)
