@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################################
-# Nombre: crea_bridge.sh
+# Nombre: crea_bridge.sh OBSOLETO, EL ARCHIVO CORRECTO ESTÄ EN LOS FILES DE ANSIBLE
 # Descripción: Script para la creación de puente de red 
 #
 # Autor: Jorge A. Díaz Lara - jorge@integraci.com / jorge.diaz@gmail.com
