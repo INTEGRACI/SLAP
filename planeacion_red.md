@@ -23,32 +23,32 @@ Tienen los números de dispositivos de red y área se puede escoger un segmento de
 Ejemplo:
 En la organización se cuenta con las siguientes áreas sistemas, administración, invitados, cajas, contabilidad y finanzas. Cada área cuenta con la siguiente cantidad de equipos de cómputo.
 
--Sistemas.
--+Servidores: 5
--+Estaciones de trabajo: 3
--+Inalámbricos: 3
--+Cámaras IPs: 10
+- Sistemas.
+ - Servidores: 5
+ - Estaciones de trabajo: 3
+ - Inalámbricos: 3
+ - Cámaras IPs: 10
 
--Administración.
--+Impresoras: 3
--+Estaciones de trabajo: 15
+- Administración.
+ - Impresoras: 3
+ - Estaciones de trabajo: 15
 
--Invitados.
--+Estaciones de trabajo: 30
+ - Invitados.
+ - Estaciones de trabajo: 30
 
--Cajas.
--+Estaciones de trabajo: 5
+- Cajas.
+ - Estaciones de trabajo: 5
 
--Contabilidad.
--+Estaciones de trabajo: 15
--+Impresoras: 3
+- Contabilidad.
+ - Estaciones de trabajo: 15
+ - Impresoras: 3
 
--Finanzas.
--+Estaciones de trabajo: 12
--+Impresoras: 3
+- Finanzas.
+ - Estaciones de trabajo: 12
+ - Impresoras: 3
 
--Telefonía:
--+Telefonos: 40
+- Telefonía:
+ - Telefonos: 40
  
 Sumar todos los dispositivos y áreas para seleccionar el tipo de red privada.
 
