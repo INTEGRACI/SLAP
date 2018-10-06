@@ -1,4 +1,4 @@
-**Planeación de la red.
+# Planeación de la red.
 
 La protección de los datos almacenados en los sistemas de cómputo en una entidad de gobierno se requiere que sean protegidos de personas o programas no autorizadas para que la información pública sea confidencial, integra y disponible. Lo anterior es conocido como la triada de la seguridad informática y alcanzarlo se requiere de lo siguiente:
 
