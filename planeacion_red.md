@@ -64,37 +64,37 @@ La instalación de un sistema de cableado estructurado es la base para la buena i
 <H2>Servicios de Red.</H2>
 Toda organización pública o privada requieren compartir información, Internet, página web de la empresa, capacitación en línea, correo, conmutador telefónico, bloquear accesos no autorizados y filtrado de contenido; lo que permitirá mejorar y automatizar sus procesos tanto interno y externos, así como también mitigar las amenazas ciberneticas que pueden perjudiicar a los procesos de la organización.
 
-**Samba.
+** Samba.
 Es un software libre que permite compartir datos e impresoras con equipoos Windows, Linux y Unix; así como también permite interactuar con directorios activos (LDAP o Kerberos) para controlar el acceso a directorios e impresoras a usuarios.
 
-**iTOP
+** iTOP
 Es un sistema de base de datos de configuración de bienes tecnológicos (CMDB, por sus siglas en ingles), el cual permite tener identificado y relacionado los componentes de TI que contenga la organización.
 
-**Joomla
+** Joomla
 Es un sistema de gestión de contenido que permite desarrollar sitios dinámicos e interactivos. Permite crear, modificar o eliminar contenido del sitio de manera sencilla a través de un panel de administración.
 
-**Moodle.
+** Moodle.
 Es un sistema de administración del aprendizaje(LMS, por sus siglas en ingles) que permite crear una plataforma de aprendizaje con base al elearning. Lo cual, el instructor/docente puede subir contenido, actividades y evaluaciones dinámicas de las diferentes materias que se imparten en las diferentes instituciones de nivel básico, media o superior.
 
-**Qmail.
+** Postfix.
 Es un sistema de correo electrónico que permite enviar correos e interactua con antivirus clamav para detectar y eliminar correos cuyo contenido contengan programas maliciosos. También tiene compatibilidad con spam assassin para eliminar correos basuras para evitar los usuarios tengan en su buzón correos publicitarios.
 
-**Squid.
+** Squid.
 Es un proxy cache para web con soporte a los protocolos HTTP, HTTPS, FTP entre otros; por lo que permite almacenar en cache las páginas visitadas por los usuarios, permitiendo desminuir el consumo de ancho de banda y reduciir los tiempos de respuestas. También ayuda a controlar el contenido de las páginas web visitadas por el usuario y controlar el acceso a Internet.
 
-**Asterisk.
+** Asterisk.
 Es un proyecto de telecomunicaciones que permite crear una central telefónica (PBX, por sus siglas en ingles) o pasarela PBX para comunicar teléfonos IP's, analógos o de software; a la red telefónica (PSTN por sus siglas en ingles) o realizar llamadas dentro de la organización. Dicho software cuenta con diferentes módulos como son: llamada en espera, autorespuesta, sigueme, respuesta de voz interactiva (IVR, por sus siglas en ingles), buzón de voz, redireccionamiento de llamada entre otros.
 
-**FreeIPA
+** FreeIPA
 Es un programa que permite administrar identidades (cuenta de usuarios), politicas y auditoría cuyo objetivo es proveer una interfaz segura y sencilla para la administración de identidades, orientado principalmente a entornos basados en Red Hat y compatible con posix.
 
-**Servidor de Nombre de dominio.
+** Servidor de Nombre de dominio.
 Servicio que permite admnistrar los dominios y traducirlos a direcciones ip's dentro de la organización.
 
-**NTP.
+** NTP.
 Servicio que permite a servidores y estaciones de trabajo sincronizar la fecha y hora para registrar los eventos y sincronizar los equipos de cómputo con directorios activos.
 
-**Ansible.
+** Ansible.
 Es una plataforma que sirve para configurar y administrar equipos de cómputo y servidores. Lo que permite, disminuir los tiempos de instalación y de configuración de los equipos de cómputo.
 
 <H2>Escritorios de trabajo para los usuarios.</H2>
