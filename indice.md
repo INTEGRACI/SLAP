@@ -32,7 +32,7 @@
   * [Ejercicios para mejorar el uso del teclado](ejercicio_teclado.md)
   * [El Editor de Texto Vim](editor_de_texto.md)
   * [Scripts de Bash](#)
-  * [Trabajando con SSH](#)
+  * [Trabajando con SSH](trabajando_ssh.md)
   * [Introducción a Ansible](#)
     * [El archivo /etc/ansible/hosts](#)
   * [Lecturas recomendadas](README.md)
