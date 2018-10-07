@@ -110,4 +110,4 @@ En la actualidad existen diferentes paqueterías y aplicaciones similares a las q
 5. Gimp, es una aplicación que permite manipular imagenes en cualquiera de los formatos existentes y es ideal para diseñadores.
 6. Además de otros programas que permiten al usuario personalizar el escritorio, configuración de impresoras, reproductor de audio, etc.
 
-[**<-Anterior**](creacion_usb_instalacion.md) | [**Inicio**(indice.md)] | [**Siguiente->**](Instalacion_estacion_trabajo_administrador.md)
+[**<-Anterior**](creacion_usb_instalacion.md) | [**Inicio**](indice.md) | [**Siguiente->**](Instalacion_estacion_trabajo_administrador.md)
