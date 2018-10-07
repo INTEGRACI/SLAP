@@ -45,4 +45,4 @@ Añadir la identidad de las llaves.
 
 Con lo anterior, permitirá que se pueda acceder a los equipos remotos que anteriormente se accedian con el equipo anterior.
 
-[**<-Anterior**](scripts_bash.md) | [**Inicio**](indice.md) | [**Siguiente->**](Introducción a Ansible)
+[**<-Anterior**](scripts_bash.md) | [**Inicio**](indice.md) | [**Siguiente->**](Introducción_Ansible.md)
