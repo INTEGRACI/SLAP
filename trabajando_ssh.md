@@ -14,7 +14,7 @@ Para iniciar el servicio al momento que se arranque el sistema operativo, se eje
 
 >su -c "systemctl enable sshd.service"
 
-## Autenticación sin contraseÃa.
+## Autenticación sin contraseña.
 En ocasiones se realizarán actividades con equipos remotos en forma automatizada como es el caso de Ansible. Para evitar que sea solicitada la contraseña cada vez que se conecta por SSH podemos generar una llave y enviarla al equipo, así este reconocerá que las instrucciones provienen de un dispositivo de confianza y se ejecutará, en caso de modificarse las llaves, estas deberán de actualizarse. Para generar la llave SSH se realiza los siguientes comandos.
 
 Con el usuario que se vaya a trabajar, se debe de acceder a su directorio principal.
