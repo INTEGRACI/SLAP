@@ -6,7 +6,7 @@
   * [Beneficios del software libre en la administración pública](beneficios.md)
 * [Procesos y servicios en la administración pública](proc_y_servs_en_la_ap.md)
   * [Servicios TIC para la operación](README.md)
-  * [Interacción con la población](README.md)
+  * [Servicios para la interacción con la población](README.md)
 * [Servicios](#)
   * Información
     * [Páginas web](servidor_web.md)
