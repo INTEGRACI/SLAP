@@ -23,7 +23,7 @@
     * [Plataforma de eLearning](servidor_lms.md)
   * [Nombres de dominio y bloqueo de anuncios](README.md)  
   * [Sincronización de tiempo](README.md)
-  * [Base de datos de bienes tecnológicos](README.md)
+  * [Base de datos de bienes tecnológicos](base_datos_bienes_TI.md)
   * [Voz sobre IP](README.md)
   * [Cache Web](README.md)
   * [Contenidos web](README.md)
