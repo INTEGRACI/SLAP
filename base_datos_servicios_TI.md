@@ -131,7 +131,9 @@ Creación de la base de datos para iTop.
 ![mysql secure instalation](./imagenes/itop/mariadb.gif)
 >
 >\# mysql -u root -pPASSWORD -e "CREATE DATABASE itopdb DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci"
+>
 >\# mysql -u root -pPASSWROD -e "GRANT ALL ON itopdb.* TO 'usritop'@'localhost' IDENTIFIED BY 'PASSWORDITOP';"
+>
 >\# mysql -u root -pPASSWORD -e "FLUSH PRIVILEGES;"
 Donde PASSWORD es la contraseña del usuario root de MariaDB y PASSWORDITOP es la contraseña del usuario usritop para la base de datos.
 
