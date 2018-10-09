@@ -6,7 +6,7 @@ Desarrollo comunitario/social
 Desarrollo económico
 Educación
 Interacción 
-  Desarrollo de aplicación para el acopio de información y reporte de bienes e infraestructura urbana en la delegación.
+  Desarrollo de aplicación para el acopio de información y reporte de bienes, infraestructura urbana y via pública en la delegación.
 Alimentación
   Capacitación para el autocultivo
   Creación de huertos urbanos
