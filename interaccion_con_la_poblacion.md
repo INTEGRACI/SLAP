@@ -7,6 +7,7 @@ Desarrollo económico
 Educación
 Interacción 
   Desarrollo de aplicación para el acopio de información y reporte de bienes, infraestructura urbana y via pública en la delegación.
+    Levantamiento de información de coladeras, topes, luminarias, árboles, áreas verdes, comercio en espacio público.
 Alimentación
   Capacitación para el autocultivo
   Creación de huertos urbanos
