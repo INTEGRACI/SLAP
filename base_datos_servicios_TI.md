@@ -203,6 +203,7 @@ Proceso de instalación.
 
 ### Paso 14.
 Instalación satisfactoria.
+
 ![instalacion terminada](./imagenes/itop/15_Done.png)
 
 ### Página de bienvenida.
