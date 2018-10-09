@@ -146,7 +146,7 @@ Para ver los detalles de los requisitos validados, se da click en el botón _show
 ![Detalles](./imagenes/itop/2_Inicio_Itop_detalle.png)
 
 ### Paso 2.
-Una vez validado que están correctos los requisitos se da click en _Continue_. En la siguiente página se debe de seleccionar la opción _Install a new iTop_ por no ser una actualización. Se procede a continuar..
+Una vez validado que están correctos los requisitos se da click en _Continue_. En la siguiente página se debe de seleccionar la opción _Install a new iTop_ por no ser una actualización. Se procede a continuar.
 ![Instalación o actualización](./imagenes/itop/3_InstallorUpgrade_choice.png)
 
 ### Paso 3.
@@ -155,6 +155,7 @@ Se habilita la casilla de aceptación de la licencia y se continua con el proceso
 
 ### Paso 4.
 Se ingresa los datos para la conexión de la base de datos y su prefixo. El usuario y contraseña son del usuario usritop para la base de datos itopdb.
+
 ![Configuración de la base de datos](./imagenes/itop/5_DatabaseConfiguration.png)
 
 ### Paso 5.
@@ -163,6 +164,7 @@ Se asigne la contraseña del administrador.
 
 ### Paso 6.
 Se puede cambiar el idioma y se debe de seleccinoar la opción de _I am installing a producction instance, create an empty database to start from.
+
 ![Miscellaneous](./imagenes/itop/7_MiscellaneousParameters.png)
 
 ### Paso 7.
@@ -183,6 +185,7 @@ Selección del tipo de administración que puede ser simple o basado en ITIL.
 
 ### Paso 11.
 Selección de tickets ITIL.
+
 ![Selección de tickets](./imagenes/itop/12_AdditionalITILtickets.png)
 
 ### Paso 12.
@@ -191,10 +194,12 @@ Habilitar la extensión de IPAM ofr iTop(TeemIP).
 
 ### Paso 13.
 Listo para realizar la instalación.
+
 ![instalacion](./imagenes/itop/13_ReadyInstall.png)
 
 Proceso de instalación.
-![Proceso](.imagenes/itop/14_DescargaReadytoinstall.png)
+
+![Proceso](./imagenes/itop/14_DescargaReadytoinstall.png)
 
 ### Paso 14.
 Instalación satisfactoria.
