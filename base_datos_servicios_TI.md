@@ -127,8 +127,8 @@ Se modifica la carpeta en donde se aloja la página de iTop para acceder directam
 
 Creación de la base de datos para iTop.
 >\# mysql_secure_instalation
->![mysql secure instalation](./imagenes/itop/mariadb.gif)
 >
+![mysql secure instalation](./imagenes/itop/mariadb.gif)
 >
 >\# mysql -u root -pPASSWORD -e "CREATE DATABASE itopdb DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci"
 >\# mysql -u root -pPASSWROD -e "GRANT ALL ON itopdb.* TO 'usritop'@'localhost' IDENTIFIED BY 'PASSWORDITOP';"
