@@ -42,34 +42,48 @@ PHP 7.0 con las extensiones de xml, ldap, gd, soap, mbstring y mcrypt
 ### Descarga e instalación de iTop.
 Instalación de iTop 2.5.0 en CentOS 7.
 >\# wget http://downloads.sourceforge.net/project/itop/itop/2.5.0/iTop-2.5.0-3935.zip
+>
 >\# cd ~/
+>
 >\# mkdir /var/www/html/itop
+>
 >\# unzip iTop-2.5.0-3935.zip
+>
 >\# mv web /var/www/html/itop/
+>
 >\# mkdir /var/www/html/itop/web/{conf,env,env-production,env-production-build}
 
 ### Descarga e instalación de TeemIP.
 Extensión que permitirá crear, modificar y administrar IP's.
 >\# cd ~/
+>
 >\# wget https://downloads.sourceforge.net/project/teemip/teemip%20-%20an%20iTop%20module/2.3.0/teemip-core-ip-mgmt-2.3.0.zip
+>
 >\# unzip teemip-core-ip-mgmt-2.3.0.zip
+>
 >\# mv teemip-core-ip-mgmt /var/www/html/itop/web/extensions/
 
 ## Seguridad y SELinux.
 ### Propietario y permisos.
 Se van a asignar propietario, grupo y permisos sobre la carpeta y subcarpetas de iTop.
 >\# chown -R apache:apache /var/www/html/itop
+>
 >\# find /var/www/html/itop -type d -exec chmod 755 {}\;
+>
 >\# find /var/www/html/itop -type f -exec chmod 644 {}\;
 
 ### Firewall.
 >\# firewall-cmd --zone=public --add-service=http --permanent
+>
 >\# firewall-cmd --reload
 
 ### Cron iTop.
 >\# mkdir /etc/itop
+>
 >\# mv /var/www/html/itop/web/webservices/cron.distrib /etc/itop/
+>
 >\# sed -i "s/auth_user=admin/auth_user=ADMINISTRADOR/g" /etc/itop/cron.distrib
+>
 >\# sed -i "s/auth_pwd=admin/auth_admin=PASSWORD/g" /etc/itop/cron.distrib
 >
 Donde ADMINISTRADOR es nombre del usuario administrador y PASSWORD es la contraseña asignada por el usuario.
@@ -78,33 +92,49 @@ Donde ADMINISTRADOR es nombre del usuario administrador y PASSWORD es la contras
 
 ### SELinux.
 >\# setsebool -P httpd_can_network_connect_db_on
+>
 >\# setsebool -P httpd_can_connect_ldap_on
 >
 >\# chcon -R -u system_u /var/www/html/*
 >\# chcon -R -t httpd_sys_content_t /var/www/html/itop
 >
 >\# semanage fcontext -a -t etc_t '/etc/itop/cron.distrib'
+>
 >\# semanage fcontext -a -t httpd_sys_content_t "/var/www/html/itop(/.*)?"
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/conf'
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/data'
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/env-production'
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/env-production-build'
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/log'
+>
 >\# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/itop/web/extensions'
 >
 >\# restorecon -R -v '/var/www/html/itop'
+>
 >\# restorecon -v '/var/www/html/itop/web/conf'
+>
 >\# restorecon -v '/var/www/html/itop/web/data'
+>
 >\# restorecon -v '/var/www/html/itop/web/env-production'
+>
 >\# restorecon -v '/var/www/html/itop/web/env-production-build'
+>
 >\# restorecon -v '/var/www/html/itop/web/log'
+>
 >\# restorecon -v '/var/www/html/itop/web/extensions'
 
 ## Configuraciones en PHP y MariaDB.
 ### PHP.ini
 Modificar parámetros de tamaños de archivos, máximo tiempo de entrada y post
 >\# sed -i "s/post_max_size=8M/post_max_size=32M/g" /etc/php.ini
+>
 >\# sed -i "s/upload_max_filesize=2M/upload_max_filesize=30M/g" /etc/php.ini
+>
 >\# sed -i "s/max_input_time=60/max_input_time=180/g" /etc/php.ini
 
 ## MariaDB
@@ -119,10 +149,12 @@ Se modifica la carpeta en donde se aloja la página de iTop para acceder directam
 ## Activación de Servicios.
 ### Apache
 >\# systemctl enable httpd.service
+>
 >\# systemctl start httpd.service
 
 ### MariaDB
 >\# systemctl enable mariadb.service
+>
 >\# systemctl start mariadb.service
 
 Creación de la base de datos para iTop.
