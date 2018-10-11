@@ -88,6 +88,8 @@ Se van a asignar propietario, grupo y permisos sobre la carpeta y subcarpetas de
 >
 Donde ADMINISTRADOR es nombre del usuario administrador y PASSWORD es la contraseña asignada por el usuario.
 >
+>\# echo '*/5 * * * * /bin/php /var/www/html/itop/web/webservices/cron.php --param_file=/etc/itop/cron.distrib >> /var/log/itop-cron.log 2>&1' | crontab
+>
 >\# echo '*/5 * * * * root /usr/bin/php /var/www/html/itop/web/webservices/cron.php --param_file=/etc/itop/cron.distrib >> /var/log/itop-cron.log 2>&1' | crontab
 
 ### SELinux.
