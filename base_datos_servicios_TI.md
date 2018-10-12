@@ -68,9 +68,9 @@ Extensión que permitirá crear, modificar y administrar IP's.
 Se van a asignar propietario, grupo y permisos sobre la carpeta y subcarpetas de iTop.
 >\# chown -R apache:apache /var/www/html/itop
 >
->\# find /var/www/html/itop -type d -exec chmod 755 {}\;
+>\# find /var/www/html/itop -type d -exec chmod 755 {}\\;
 >
->\# find /var/www/html/itop -type f -exec chmod 644 {}\;
+>\# find /var/www/html/itop -type f -exec chmod 644 {}\\;
 
 ### Firewall.
 >\# firewall-cmd --zone=public --add-service=http --permanent
@@ -90,14 +90,14 @@ Donde ADMINISTRADOR es nombre del usuario administrador y PASSWORD es la contras
 >
 >\# echo '*/5 * * * * /bin/php /var/www/html/itop/web/webservices/cron.php --param_file=/etc/itop/cron.distrib >> /var/log/itop-cron.log 2>&1' | crontab
 >
->\# echo '*/5 * * * * root /usr/bin/php /var/www/html/itop/web/webservices/cron.php --param_file=/etc/itop/cron.distrib >> /var/log/itop-cron.log 2>&1' | crontab
 
 ### SELinux.
->\# setsebool -P httpd_can_network_connect_db_on
+>\# setsebool -P httpd_can_network_connect_db on
 >
->\# setsebool -P httpd_can_connect_ldap_on
+>\# setsebool -P httpd_can_connect_ldap on
 >
 >\# chcon -R -u system_u /var/www/html/*
+>
 >\# chcon -R -t httpd_sys_content_t /var/www/html/itop
 >
 >\# semanage fcontext -a -t etc_t '/etc/itop/cron.distrib'
