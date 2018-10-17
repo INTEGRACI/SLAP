@@ -1,0 +1,119 @@
+- name: Instalación de iTop
+  hosts: itop
+
+  vars:
+    ApachePackages: ['httpd','mod_security','mod_ssl','mod_auth_kerb']
+    MariaDBPackages: ['mariadb','mariadb-server']
+    NetTools: ['net-tools','policycoreutils-python','wget','vim','bash-completion','unzip','graphviz','MySQL-python']
+    PHPPackages: ['php','php-zip','php-mysql','php-xml','php-xmlrpc','php-ldap','php-gd','php-soap','php-mbstring','php-mcrypt','php-intl']
+    mysql_password_root: r00t$4dm1n
+    mysql_usuario_itop: admin
+    mysql_password_itop: 4dm1niT0p
+    itop_db: itopdb
+    itop_usuario: admin
+
+  tasks:
+    - name: Actualizando paquetes...
+      yum:
+        name: '*'
+        state: latest
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+
+    - name: Instalando paquete epel...
+      yum:
+        name: epel-release
+        state: latest
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+
+    - name: Instalando paquete remi...
+      yum:
+        name: http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+        state: latest
+      when: ansible_distribution == "CentOS"
+
+    - name: Instalando Apache...
+      yum:
+        name: "{{ item }}"
+        state: latest
+      when: ansible_distribution == "CentOS"
+      with_list:
+        "{{ ApachePackages }}"
+
+    - name: Instalando MariaDB...
+      yum:
+        name: "{{ item }}"
+        state: latest
+      when: ansible_distribution == "CentOS"
+      with_list:
+        "{{ MariaDBPackages }}"
+
+    - name: Instalando herramientas de red...
+      yum:
+        name: "{{ item }}"
+        state: latest
+      when: ansible_distribution == "CentOS"
+      with_list:
+        "{{ NetTools }}"
+
+    - name: Instalando PHP...
+      yum:
+        name: "{{ item }}"
+        enablerepo: remi,remi-php70
+        state: latest
+      when: ansible_distribution == "CentOS"
+      with_list:
+        "{{ PHPPackages }}"
+
+    - name: Ejecutando el script de iTop...
+      script: /etc/ansible/scripts/iTop.sh
+
+    - name: Iniciando servicio Apache...
+      service:
+        name: httpd
+        enabled: yes
+        state: started
+      when: ansible_distribution == "CentOS"
+
+    - name: Iniciando servicio MariDB...
+      service:
+        name: mariadb
+        enabled: yes
+        state: started
+      when: ansible_distribution == "CentOS"
+
+    - name: Borrando usuario anonimo de MariaDB...
+      mysql_user:
+        name: ''
+        host_all: yes
+        state: absent
+
+    - name: Borrando la base de datos test...
+      mysql_db:
+        name: test
+        state: absent
+
+    - name: Asignando password al usuario root...
+      mysql_user:
+        name: root
+        password: "{{ mysql_password_root }}"
+        state: present
+
+    - name: Creando base de datos itopdb..
+      mysql_db:
+        login_user: root
+        login_password: "{{ mysql_password_root }}"
+        login_host: localhost
+        name: "{{ itop_db }}"
+        state: present
+
+    - name: Creando usuario admin y asignando privilegios ALL
+      mysql_user:
+        login_user: root
+        login_password: "{{ mysql_password_root }}"
+        login_host: localhost
+        name: "{{ mysql_usuario_itop }}"
+        password: "{{ mysql_password_itop }}"
+        priv: '{{ itop_db }}.*:ALL:GRANT'
+        state: present
