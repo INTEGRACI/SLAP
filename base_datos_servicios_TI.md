@@ -84,7 +84,7 @@ Se van a asignar propietario, grupo y permisos sobre la carpeta y subcarpetas de
 >
 >\# sed -i "s/auth_user=admin/auth_user=ADMINISTRADOR/g" /etc/itop/cron.distrib
 >
->\# sed -i "s/auth_pwd=admin/auth_admin=PASSWORD/g" /etc/itop/cron.distrib
+>\# sed -i "s/auth_pwd=admin/auth_pwd=PASSWORD/g" /etc/itop/cron.distrib
 >
 Donde ADMINISTRADOR es nombre del usuario administrador y PASSWORD es la contraseña asignada por el usuario.
 >
