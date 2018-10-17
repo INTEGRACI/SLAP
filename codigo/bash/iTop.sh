@@ -145,10 +145,10 @@ error
 sed -i "s/auth_user=admin/auth_user=$USER/g" /etc/itop/cron.distrib
 ERROR=$?
 error
-sed -i "s/auth_pwd=admin/auth_user=$PASS/g" /etc/itop/cron.distrib
+sed -i "s/auth_pwd=admin/auth_pwd=$PASS/g" /etc/itop/cron.distrib
 ERROR=$?
 error
-echo "*/5 * * * * /bin/php $DIR_ITOP/web/webservices/cron.php --param=/etc/itop/cron.distrib >> $LOG/itop-log 2>&1" | crontab
+echo "*/5 * * * * /bin/php $DIR_ITOP/web/webservices/cron.php --param_file=/etc/itop/cron.distrib >> $LOG/itop-log 2>&1" | crontab
 ERROR=$?
 error
 echo "[ OK ]"
