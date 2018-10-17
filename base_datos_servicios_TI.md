@@ -20,7 +20,7 @@ Son paquetes adicionales para Linux empresarial y es creado, mantenido y adminis
 
 ### Repositorio Remi.
 Es un repositorio que contiene paquetes actualizados para sistemas Linux Enterprise.
->\# rpm -Uvh http://rpms.famillecollect.com/enterprise/remi-release-7.rpm
+>\# rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 
 ### Herramientas del sistema.
 Instalar comandos para configurar la red, descargar archivos, modificar políticas de SELinux, entre otras.
