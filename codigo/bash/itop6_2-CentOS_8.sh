@@ -56,6 +56,9 @@ sed -i "s/pool 2.centos.pool.ntp.org/server cronos.cenam.mx/g" /etc/chrony.conf
 # Sincroniza el servidor de tiempo al iniciar el equipo
 systemctl enable --now chronyd
 
+# Reinicia el servicio de NTP
+systemctl restart chronyd
+
 # Muestra informacioń del tiempo actual de las fuentes o servidores de tiempo
 chronyc sources
 
