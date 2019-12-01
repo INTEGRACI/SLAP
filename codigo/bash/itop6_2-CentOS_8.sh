@@ -110,7 +110,7 @@ mkdir /var/www/html/$DIRECTORIO/{conf,env-production,env-production-build}
 #==============================================================================
 # Descarga Extensión - Monedas Adicionales para Contratos
 #==============================================================================
-git clone https://github.com/INTEGRACI/monedas-adicionales-contratos-itop.git /var/www/html/$DIRECTORIO/extensions
+git clone https://github.com/INTEGRACI/monedas-adicionales-contratos-itop.git /var/www/html/$DIRECTORIO/extensions/monedas-adicionales-contratos
 
 #==============================================================================
 # Descarga de extensión IPA (TeemIP)
