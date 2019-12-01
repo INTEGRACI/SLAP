@@ -39,22 +39,46 @@ USUARIO_BASE_DATOS_PASSWORD="password"   # Contraseña de usuario de Base Datos
 #==============================================================================
 
 #==============================================================================
-# Preparación de servidor
+# Sincronización de tiempo de equipo con la hora oficial de México
 #==============================================================================
-# Limpia metadatos
-dnf clean all
+# Configuración de Zona Horaria
+timedatectl set-timezone America/Mexico_City
 
-# Actualiza paquetes 
-dnf -y update
+# Se sincronizará con un servidor de tiempo (NTP)
+timedatectl set-ntp yes
+
+# Instalación de Chrony
+dnf -y install chrony
+
+# Configuración de servidor de tiempo a "cronos.cenam.mx"
+sed -i "s/pool 2.centos.pool.ntp.org/server cronos.cenam.mx/g" /etc/chrony.conf
+
+# Sincroniza el servidor de tiempo al iniciar el equipo
+systemctl enable --now chronyd
+
+# Muestra informacioń del tiempo actual de las fuentes o servidores de tiempo
+chronyc sources
+
+# Instala la herramienta ntpstat
+dnf -y install ntpstat
+
+# Muestra el estatus de sincronización del equipo con el servidor de tiempo.
+ntpstat
 
 #==============================================================================
 # Instalación de repositorios
 #==============================================================================
+# Limpia metadatos
+dnf clean all
+
 # Extra Packages for Enterprise Linux (EPEL)
 dnf -y install epel-release
 
 # Remi's RPM repository - https://rpms.remirepo.net/wizard/
 dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+
+# Actualiza paquetes 
+dnf -y update
 
 #==============================================================================
 # Instalación de paquetes
