@@ -77,6 +77,11 @@ git clone -b support/2.6.2 https://github.com/Combodo/iTop.git /var/www/html/$DI
 mkdir /var/www/html/$DIRECTORIO/{conf,env-production,env-production-build}
 
 #==============================================================================
+# Descarga Extensión - Monedas Adicionales para Contratos
+#==============================================================================
+git clone https://github.com/INTEGRACI/monedas-adicionales-contratos-itop.git /var/www/html/$DIRECTORIO/extensions
+
+#==============================================================================
 # Descarga de extensión IPA (TeemIP)
 #==============================================================================
 cd ~/
