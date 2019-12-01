@@ -120,6 +120,18 @@ wget https://downloads.sourceforge.net/project/teemip/teemip%20-%20an%20iTop%20m
 unzip teemip-core-ip-mgmt-2.5.0-478.zip -d /var/www/html/$DIRECTORIO/extensions/
 
 #==============================================================================
+# Elimina diccionarios de otros lenguajes - Excepto Español Castellano e Inglés
+# Basado en el script de "Jeffrey Bostoen"
+#==============================================================================
+removeLang=("cs" "da" "de" "fr" "hu" "it" "ja" "nl" "pt_br" "ru" "tr" "zh")
+
+for i in "${removeLang[@]}"
+do
+   find /var/www/html/$DIRECTORIO/ -type f -name "$i.dict.*" -delete
+   find /var/www/html/$DIRECTORIO/ -type f -name "$i.dictionary.*" -delete
+done
+
+#==============================================================================
 # Cron de iTop
 #==============================================================================
 mkdir /etc/$DIRECTORIO
