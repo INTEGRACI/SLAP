@@ -44,11 +44,11 @@ USUARIO_BASE_DATOS_PASSWORD="password"   # Contraseña de usuario de Base Datos
 # Configuración de Zona Horaria
 timedatectl set-timezone America/Mexico_City
 
-# Se sincronizará con un servidor de tiempo (NTP)
-timedatectl set-ntp yes
-
 # Instalación de Chrony
 dnf -y install chrony
+
+# Se sincronizará con un servidor de tiempo (NTP)
+timedatectl set-ntp yes
 
 # Configuración de servidor de tiempo a "cronos.cenam.mx"
 sed -i "s/pool 2.centos.pool.ntp.org/server cronos.cenam.mx/g" /etc/chrony.conf
