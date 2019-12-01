@@ -123,7 +123,7 @@ unzip teemip-core-ip-mgmt-2.5.0-478.zip -d /var/www/html/$DIRECTORIO/extensions/
 # Elimina diccionarios de otros lenguajes - Excepto Español Castellano e Inglés
 # Basado en el script de "Jeffrey Bostoen"
 #==============================================================================
-removeLang=("cs" "da" "de" "fr" "hu" "it" "ja" "nl" "pt_br" "ru" "tr" "zh")
+removeLang=("cs" "da" "de" "fr" "hu" "it" "ja" "nl" "pt_br" "ru" "sk" "tr" "zh" "zh_cn")
 
 for i in "${removeLang[@]}"
 do
