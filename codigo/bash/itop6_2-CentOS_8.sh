@@ -3,11 +3,10 @@
 # Instalación de iTop 6.2 en CentOS 8
 # 
 # Uso:
-#   - Convertir en archivo ejecutable o pasarlo a bash para su ejecución.
-#       $ chmod +x <archivo.sh>
-#   - Ejecutar con permisos de admnistración o superadministrador.
-#       # ./<archivo.sh>
-#   - Continuar la instalación en el navegador web en la IP o URL del DOMINIO.
+#    # curl -sSL https://integraci.github.io/codigo/bash/itop6_2-CentOS_8.sh | bash
+#
+# Instalación en el navegador web en la IP o URL del DOMINIO.
+#    https://localhost/itop  o el Directorio que defina en las Variables
 #
 # Después de instalar iTop en tu navegador web, deberás cambiar los permisos 
 # del archivo de configuración, puedes hacerlo mediante el siguiente comando:
@@ -250,5 +249,3 @@ mysql -u root -p$MARIADB_ROOT_PASSWORD -e "CREATE DATABASE $BASE_DATOS_ITOP DEFA
 
 # Creación de usuario y permisos para iTop
 mysql -u root -p$MARIADB_ROOT_PASSWORD -e "GRANT ALL ON $BASE_DATOS_ITOP.* TO '${USUARIO_BASE_DATOS}'@'localhost' identified by '${USUARIO_BASE_DATOS_PASSWORD}'"
-
-
