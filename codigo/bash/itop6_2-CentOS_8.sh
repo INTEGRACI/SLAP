@@ -117,6 +117,7 @@ git clone https://github.com/INTEGRACI/monedas-adicionales-contratos-itop.git /v
 #==============================================================================
 cd ~/
 wget https://sourceforge.net/projects/teemip/files/teemip%20-%20an%20iTop%20module/2.5.1/teemip-core-ip-mgmt-2.5.1-503.zip/download
+mv download teemip-core-ip-mgmt-2.5.1-503.zip
 unzip teemip-core-ip-mgmt-2.5.1-503.zip -d /var/www/html/$DIRECTORIO/extensions/
 
 #==============================================================================
