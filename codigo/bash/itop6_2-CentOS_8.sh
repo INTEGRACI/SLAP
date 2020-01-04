@@ -3,7 +3,7 @@
 # Instalación de iTop 6.2 en CentOS 8
 # 
 # Uso:
-#    # curl -sSL https://integraci.github.io/codigo/bash/itop6_2-CentOS_8.sh | bash
+#  # curl -sSL https://integraci.github.io/codigo/bash/itop6_2-CentOS_8.sh | bash
 #
 # Instalación en el navegador web en la IP o URL del DOMINIO.
 #    https://localhost/itop  o el Directorio que defina en las Variables
@@ -16,8 +16,9 @@
 # Licencia GNU/GPL Versión 2 o superior
 #
 # Autor: Jorge Antonio Díaz Lara - jorge@integraci.com.mx
-#        Victor Mejía Lara
-#        Odin Mojica
+#        Victor Mejía Lara - vmejialara@gmail.com
+#        Odin Mojica - odinmojica@gmail.com
+#        Ernesto Escobedo - eescobedo@gmail.com
 #==============================================================================
 
 #==============================================================================
@@ -182,6 +183,8 @@ cat << EOF > /etc/httpd/conf.d/00-$DIRECTORIO.conf
  ErrorDocument 403 http://${DOMINIO}/
  </Directory>
  LogLevel warn
+ TimeOut 300
+ ProxyTimeout 300
 </VirtualHost>
 EOF
 
